@@ -1,2 +1,1 @@
-# agp-internship.github.io
-ASR Gooyesh Pardaz Internship Projects Website
+# ASR Gooyesh Pardaz Internship Projects Website

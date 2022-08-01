@@ -11,6 +11,8 @@ def home():
 def send_message():
     if request.method == 'POST':
         message=request.form["msg"]
+        print(1111)
+        print(message)
         # message = the message we should pass to eliza respond method
         return redirect(url_for("message",msg=message))
     else:

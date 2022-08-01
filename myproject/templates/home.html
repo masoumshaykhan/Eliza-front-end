@@ -1,34 +1,38 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block title %} Persian Eliza {% endblock %} {% block content %}
 
-{% block title %}
-    Persian Eliza
-{% endblock %}
+<h1>Persian Eliza</h1>
 
-{% block content %}
-
-    <h1>Persian Eliza</h1>
-
-    <div class="scrollable-div">
-        <table border="1">
-            <tr>
-            <th>:</th>
+<div class="scrollable-div">
+    <table id="myTable" border="1">
+        <tr>
             <th>client message</th>
-            <th>eliza message</th>
-            </tr>
-        </table>
-    </div>
-    
-    <div class="b-div">
+        </tr>
+    </table>
+</div>
+
+<div class="b-div">
     <form action="#" methods="post">
-        <p><input class="t-size" type="text" name="msg"/></p>
-        <p><input class="b-size" type="submit" name="send"/></p>
+        <p><input id="user_input" class="t-size" type="text" name="msg" /></p>
+        <div id="send" class="b-size">Send</div>
 
     </form>
-    </div>
+</div>
+<script>
+    text_input = document.getElementById('user_input');
+    button = document.getElementById('send');
+    button.addEventListener('click', () => {
+        console.log(text_input.value);
+        var tbodyRef = document.getElementById('myTable').getElementsByTagName('tbody')[0];
+        // Insert a row at the end of table
+        var newRow = tbodyRef.insertRow();
+        // Insert a cell at the end of the row
+        var newCell = newRow.insertCell();
+        // Append a text node to the cell
+        var newText = document.createTextNode(text_input.value);
+        newCell.appendChild(newText);
 
-    
-    
-  
-      
+    });
+</script>
+
 
 {% endblock %}

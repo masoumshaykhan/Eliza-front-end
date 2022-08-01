@@ -1,0 +1,44 @@
+.scrollable-div {
+    background-color: #8cb1d8;
+    display: flex;
+    align-items:flex-start;
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow-y:auto;
+  } 
+.b-div {
+    /* background-color:red; */
+    align-items: flex-start;
+    position: absolute;
+    left:25%;
+    right:end;
+    top:75%; 
+    bottom: 0;  
+    width: 55vw;
+    height:5vh;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("b.png");
+    height: 100%;
+    background-color: #222;
+    background-position: center,center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+  }
+.t-size {
+    height:30px;
+    width:46vw;
+}
+.b-size {
+    height: 35px;
+    width: 53px;
+}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Persian Eliza
+{% endblock %}
+
+{% block content %}
+
+    <h1>Persian Eliza</h1>
+
+    <div class="scrollable-div">
+        <table border="1">
+            <tr>
+            <th>:</th>
+            <th>client message</th>
+            <th>eliza message</th>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="b-div">
+    <form action="#" methods="post">
+        <p><input class="t-size" type="text" name="msg"/></p>
+        <p><input class="b-size" type="submit" name="send"/></p>
+
+    </form>
+    </div>
+
+    
+    
+  
+      
+
+{% endblock %}
